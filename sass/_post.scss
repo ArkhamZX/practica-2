@@ -1,0 +1,108 @@
+.post
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 7;
+    grid-row: post;
+    background-color: #f2f2f2;
+
+    &__head
+    {
+        display: grid;
+        justify-items: center;
+    }
+
+    &__title
+    {
+        width: 42.2rem;
+        height: 3.8rem;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3.2rem;
+        font-weight: 400;
+        line-height: 17.7rem;
+    }
+
+    &__2do
+    {
+        width: 63.8rem;
+        height: 2.5rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 24.4rem;
+    }
+
+    &__cards
+    {
+        display: grid;
+        justify-items: center;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(4, 30rem);
+    }
+
+    &__blog1
+    {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        width: 27rem;
+        height: 43.6rem;
+    }
+
+    &__media
+    {
+        width: 27rem;
+        height: 27rem;
+    }
+
+    &__rec
+    {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        width: 27rem;
+        height: 27rem;
+        background-color: #000000;
+    }
+
+    &__rec1
+    {
+        width: 6.4rem;
+        height: 6.4rem;
+        border-radius: 8px;
+        background-color: #ffffff;
+    }
+
+
+    &__content
+    {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 27rem;
+        height: 16.6rem;
+        background-color: #ffffff;
+    }
+
+    &__special
+    {
+        width: 22.2rem;
+        height: 2.4rem;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2rem;
+        line-height: 2.3rem;
+        color: #000000;
+    }
+
+    &__see
+    {
+        width: 6.7rem;
+        height: 2rem;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.9rem;
+    }
+}

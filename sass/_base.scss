@@ -1,0 +1,35 @@
+// RESPONSIVE BREAKPOIMTS
+$bp-largest: 75em;  //1200px
+$bp-large: 62.5em;  //1000px
+$bp-medium: 50em;   //800px
+$bp-small: 37.5em;  //600px
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html,body
+{
+    box-sizing: border-box;
+    min-height: 100vw;
+    width: auto;
+    font-size: 62.5%; 
+    font-weight: 300;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    background-color: silver;
+    color: black;
+}
+
+.container
+{
+    margin: 0 auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: [header] 6.4rem [hero] 70rem [feature] 60rem [post] 82rem [social] 38rem [footer] 41rem;
+}

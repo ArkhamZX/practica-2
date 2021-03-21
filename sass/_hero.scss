@@ -1,0 +1,94 @@
+.hero
+{
+    display: grid;
+    grid-column: 1 / 7;
+    grid-row: hero;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+    align-items: center;
+    justify-items: center;
+    padding: 0 5rem;
+    background-color: #f2f2f2;
+    
+
+    &__box
+    {
+        display: grid;
+        grid-row-gap: 1rem;
+        grid-column: 1 / 3;
+        align-items: center;
+        width: 42rem;
+        height: 35.7rem;
+    }
+
+    &__title
+    {
+        font-size: 5rem;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+        line-height: 65.63px;
+    }
+
+    &__parrafo
+    {
+        width: 42.2rem;
+        height: 8.5rem;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2rem;
+        line-height: 28.18px;
+    }
+
+    &__btn
+    {
+
+        &--login
+        {
+            color: white;
+            background-color: black;
+            width: 20rem;
+            height: 6rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 900;
+            border: 1px solid white;
+            border-radius: 5px;
+            border: none;
+            transition: .3s;
+
+            &:hover
+            {
+                color: black;
+                background-color: white;
+                border: 1px solid black;
+            }
+        }
+    }
+
+    &__right
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__white
+    {
+        display: flex;
+        width: 67rem;
+        height: 48rem;
+        background-color: white;
+        border-radius: 8px;
+        border: 2px solid black;
+    }
+
+    &__O
+    {  
+        width: 2.2rem;
+        height: 2.2rem;
+        border: 2px solid #000000;
+        border-radius: 15px;
+        box-sizing: border-box;
+        margin: 14px 6px 1px 15px;
+    }
+
+}

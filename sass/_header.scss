@@ -1,0 +1,104 @@
+.header
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column: 1 / 7;
+    background-color: white;
+    align-items: center;
+
+
+    &__box
+    {
+        display: grid;
+        
+
+        &--1
+        {
+            display: grid;
+            align-items: center;
+            grid-column: 1/ 2;
+            margin-left: 4rem;
+        }
+
+        &--2
+        {
+            display: grid;
+            align-items: center;
+            grid-column: 4 / 6;
+            margin-right: 4rem;
+             
+        }
+        
+    }
+    
+
+
+
+    &__logo
+    {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        grid-column: 1 / 1;
+    }
+
+    &__nav
+    {
+        list-style: none;
+        grid-column: 2 / 3;
+    }
+
+    &__bar
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__link
+    {
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-decoration: none;
+        list-style: none;
+
+        &--boton
+        {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    &__btn
+    {
+        display: flex;
+        grid-column: 5 / 6;
+        justify-content: flex-end;
+
+        &--login
+        {
+            background-color: black;
+            font-size: 1.6rem;
+            border: 1px solid black;
+            border-radius: 4px;
+            color: white;
+            height: 2.8rem;
+            width: 90%;
+            transition: .3s all;
+
+            &:hover
+            {
+                color: black;
+                background-color: white;
+            }
+        }
+    }
+}
+
+.help
+{
+    display: flex;
+    justify-content: space-around;
+    grid-column: 4 / 5;
+    list-style: none;
+    text-decoration: none;
+}
